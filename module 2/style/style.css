@@ -1,0 +1,625 @@
+
+@font-face {
+	font-family: 'Alternate Gothic No 2 BT';
+	src: url('../fonts/Alternate_Gothic_No.eot');
+	src: local('☺'), url('../fonts/Alternate_Gothic_No.woff') format('woff'), 
+	url('../fonts/Alternate_Gothic_No.ttf') format('truetype'), 
+	url('../fonts/Alternate_Gothic_No.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MinionPro-Regular.eot');
+	src: local('☺'), url('fonts/MinionPro-Regular.woff') format('woff'), 
+	url('../fonts/MinionPro-Regular.ttf') format('truetype'), 
+	url('../fonts/MinionPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.eot');
+	src: local('☺'), url('../fonts/Lato-Regular.woff') format('woff'),
+	url('../fonts/Lato-Regular.ttf') format('truetype'), 
+	url('../fonts/Lato-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-Bold';
+	src: url('../fonts/Lato-Bold.eot');
+	src: local('☺'), url('../fonts/Lato-Bold.woff') format('woff'), 
+	url('../fonts/Lato-Bold.ttf') format('truetype'), 
+	url('../fonts/Lato-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MyriadProRegular";
+	src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+	src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+	url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "MyriadProBold";
+	src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+	src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+	url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'LatoLight';
+	src: url('../fonts/LatoLight.eot');
+	src: local('☺'), url('../fonts/LatoLight.woff') format('woff'), 
+	url('../fonts/LatoLight.ttf') format('truetype'), 
+	url('../fonts/LatoLight.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Lato-Black';
+	src: url('../fonts/Lato-Black.eot');
+	src: local('☺'), url('../fonts/Lato-Black.woff') format('woff'), 
+	url('../fonts/Lato-Black.ttf') format('truetype'), 
+	url('../fonts/Lato-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background: #333333;
+}
+
+
+						/******nav******/
+
+
+.top {
+	margin-top: 20px;
+}
+
+.myNav {
+	background-color: #333333;
+	border: none;
+}
+
+#logo {
+	color: #ffffff;
+	font-family: "Alternate Gothic No 2 BT";
+	font-size: 55px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#logo>span {
+	color: #fe2232;
+}
+
+#myList {
+	margin-left: 100px;
+}
+
+#myList>li+li>a {
+	text-align: left;
+	color: #a8a8a8;
+	font-family: "Lato-Bold";
+	font-size: 16px;
+	font-weight: 700;
+}
+
+#myList>li>a:hover {
+	color: #fe2232;
+}
+
+#myActive {
+	font-family: "Lato-Bold";
+	font-size: 16px;
+	font-weight: 700;
+	color: #fe2232;
+}
+
+#But {
+	background: transparent;
+	margin-right: 10px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	box-sizing: border-box;
+	border: 1px solid #a7a7a7;
+	border-radius: 5px;
+}
+
+#But>span {
+	margin-left: 22px;
+	margin-right: 22px;
+	color: #a7a7a7;
+	font-family: "Lato-Regular";
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+}
+
+#But:hover {
+	background-color: red;
+	border: 1px solid transparent;
+}
+
+#But:hover span{
+	color: white;
+}
+
+
+						/******h1******/
+
+
+h1 {
+	color: #ffffff;
+	font-family: "Lato";
+	font-size: 38px;
+	font-weight: 300;
+}
+
+h1>span {
+	font-family: "Lato-Bold";
+	font-weight: 300;
+}
+
+h1>span+span {
+	font-family: "Lato-Black";
+	font-weight: 400;
+}
+
+
+#map {
+	height: 69vh;
+}
+
+.mytab{
+	padding-top: 0; 
+}
+
+
+.nav2 {
+	padding-top: 13px;
+	float: right;
+}
+
+ .nav2>div>a:active,
+ .nav2>div>a:focus {
+	font-family: "Lato";
+	font-size: 19px;
+	font-weight: 700;
+	color:#fff;
+	text-decoration: none;
+	border-bottom: 4px solid red;
+} 
+
+.nav2>div>a {
+	padding: 5px 10px;
+	font-family: "Lato";
+	font-size: 16px;
+	font-weight: 700;
+	color: #a8a8a8;
+	margin-left: 15px;
+	text-decoration: none;
+	box-sizing: border-box;
+	border: 1px solid red;
+	border-radius: 10px;
+}
+
+#myEvent{
+	margin-left: 15px;
+	resize: none;
+	width: 91%;
+	height: 40px;
+	border: 1px solid #d8d7d7;
+	background-color: #fdfdfd;
+	margin-top: 10px;
+}
+
+#myLocation {
+	margin-left: 15px;
+	margin-top: 10px;
+	resize: none;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #d8d7d7;
+	background-color: #fdfdfd;
+}
+
+#calendar {
+	margin-top: 15px;
+}
+
+#tabs {
+	border: none;
+}
+
+#nav-tabContent {
+	background: #fff;
+}
+
+#row11 {
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+#myContent {
+	padding: 0;
+	position: relative;
+}
+
+#myContent>img {
+	margin: 0;
+	width: 100%;
+	
+}
+
+#onImage {
+	margin-left: 10px;
+	margin-top: -35px;
+}
+
+#onImage>div {
+	display: inline-block;
+}
+
+.facebook {
+	background: white;
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px rgba(0,0,0,0.5);
+}
+
+#onImage>div+div {
+	margin-left: 12px ;
+}
+
+#onImage>div+div>p {
+	color: #ffffff;
+	font-family: "Lato";
+	font-size: 15px;
+	font-weight: 400;
+}
+
+h3 {
+	color: #36393b;
+	font-family: Lato;
+	font-size: 23px;
+	font-weight: 700;
+}
+
+.caption>p {
+	color: #646464;
+	font-size: 14px;
+	font-family: Lato;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.caption>p+p {
+	color: #b9b9b9;
+	font-family: Lato;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.caption>p+p+p {
+	color: #646464;
+	font-family: Lato;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+#statistic>div {
+	display: inline-block;
+	padding-bottom: 17px;
+}
+
+#men {
+	margin-left: 28px;
+	margin-right: 23px; 
+	vertical-align: 22px;
+
+}
+
+#women {
+	margin-left: 78px;
+	margin-right: 23px;
+	vertical-align: 22px;
+}
+
+.number {
+	color: #36393b;
+	font-family: "Lato";
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: -0.64px;
+}
+
+.percent {
+	color: #36393b;
+	font-family: Lato;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: -0.36px;
+}
+
+.male {
+	font-family: "Myriad Pro";
+	font-weight: 700;
+	color: #d0d0d0;
+}
+
+
+.inb{
+	display: inline-block;
+}
+
+#myButton {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.22);
+	border: 1px solid #e4e4e4;
+	background-color: #f8f8f8;
+	padding: 8px 54px;
+	padding-top: 15px;
+	margin-bottom: 47px; 
+	
+}
+
+#myButton>p {
+	color: #8e9498;
+	font-family: "Lato";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: -0.32px;
+}
+
+						/******botMenu******/
+
+
+.botMenu{
+	margin-top: 40px;
+	margin-bottom: 32px; 
+}
+
+#botActive {
+	font-family: "Lato";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.botMenu>ul>li{
+	position: relative;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.botMenu>ul>li+li:before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: -12px;
+	height: 2px;
+	width: 2px;
+	background: #575757;
+}
+
+.botMenu>ul>li>a {
+	color: #a8a8a8;
+	font-family: "Lato";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.botMenu>ul>li>a:focus {
+	color: #a8a8a8;
+	text-decoration: none;
+}
+
+#mid {
+	background: #fff;
+}
+
+						/******footer******/
+
+
+.footer {
+	margin-top: 23px;
+}
+
+.copy {
+	color: #a8a8a8;
+	font-family: "Lato-Bold";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+.copy>span {
+	color: #ffffff;
+	font-family: "Lato-Bold";
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.copy>span+span {
+	color: #ffffff;
+	font-family: "Lato-Bold";
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+
+.social {
+
+}
+
+.social>ul>li {
+	display: inline-block;
+	margin-left: 23px;
+}
+
+#content {
+	max-width: 200px;
+	overflow: hidden;
+	padding-top: 10px;
+}
+
+#content>a {
+	color: #000;
+	font-family: "Lato-Bold";
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+
+.container-fluid {
+	padding: 0 8px;
+}
+
+.fix-padding {
+	padding: 0 15px;
+}
+
+.coordinates {
+	color: #fff;
+	font-family: "Lato-Bold";
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.geo-button {
+	background: none;
+	color: #a8a8a8;
+	font-family: "Lato-Bold";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	box-sizing: border-box;
+	border: 1px solid red;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+
+#floating-panel {
+  z-index: 5;
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+#warnings-panel {
+  width: 100%;
+  height:10%;
+  text-align: center;
+}
+
+
+						/******media******/
+
+
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+
+    #myActive {
+    	text-align: center;
+    	margin-left: 0;
+    	padding: 11px;
+		font-family: "Lato-Bold";
+		font-size: 16px;
+		font-weight: 700;
+		color: #fe2232;
+	}
+
+    #But {
+		display: block;
+		background: transparent;
+		margin-right: 20px;
+		padding-top: 13px;
+		padding-bottom: 13px;
+		box-sizing: border-box;
+		border: 1px solid #a7a7a7;
+		border-radius: 5px;
+		margin: 0 auto;
+		margin-bottom: 13px;
+	}
+
+	#myList {
+		margin-left: 0;
+	}
+	
+	#myList>li+li>a {
+		text-align: center;
+		padding-left: -30px;
+		color: #a8a8a8;
+		font-family: "Lato-Regular";
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	
+
+	#onImage {
+	margin-left: 50px;
+	margin-top: -35px;
+	}
+}

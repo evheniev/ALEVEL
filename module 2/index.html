@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Steam</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="style/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/getDataFromDB.js"></script>
+        <script src="js/showHistory.js"></script>
+        <script src="js/getCurrentPosition.js"></script>
+        <script src="js/initMap.js"></script>
+    </head>
+
+    <body>
+
+        <div class="container top">
+            <nav class="navbar navbar-default myNav">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" 	data-toggle="collapse" data-target="	#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" id="logo" href="#">STE<span>.</span>P</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" id="myList" >
+                            <li><a href="#" id="myActive">Main</a></li>
+                            <li><a href="#">Get Started</a></li>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                        <div class="row middle">
+                            <nav class="nav2 col-lg-3 col-md-4 col-sm-5 col-xs-12">
+                                <div class="nav nav-tabs " id="tabs" role="tablist">
+                                    <a class="nav-item nav-link focus active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">MAP</a>
+                                    <a class="nav-item nav-link" id="<nav-profile-tab></nav-profile-tab>" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">HISTORY</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    	<div class="container text-center">
+    		<h1>Make <span>YOUR</span> next <span>MOVE!</span></h1>  
+    	</div>
+
+        <div class="container text-center">
+            <div class="container">
+                <form id="geocoding_form" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-xs-12 col-md-6 col-md-offset-3">
+                            <button type="button" id="findMe" class="find-me geo-button" onclick="getData()">Find My Location</button>
+                            <button type="button" onclick="getDataFromDataBase()" class="geo-button">Get Data</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="no-browser-support">Sorry, the Geolocation API isn't supported in Your browser.</p>
+                <p class="coordinates">Latitude: <b id="latitude">0</b> Longitude: <b id="longitude">0</b></p>
+            </div>
+        </div>
+
+    	<div class="map" id="mid">
+    		<div class="container-fluid">
+        		<div class="tab-content mytab" id="nav-tabContent">
+            	 	<div class="tab-pane active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="container-fluid fix-padding">
+                            <div class="row">
+                     			<div class="container-fluid" >
+                                    <div id="floating-panel">
+                                        <b>Start: </b>
+                                        <select id="start" class="list">
+                                            
+                                        </select>
+                                        <b>End: </b>
+                                        <select id="end" class="list">
+                                            
+                                        </select>
+                                    </div>
+                                    <div id="warnings-panel"></div>
+                                   <div class="row" id="map"></div>
+                               </div>
+                			</div>
+                        </div>
+        	  	    </div>
+        	 		<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                       <div class="container text-center"><h2>History</h2>
+                            <button type="button" onclick="showHistory()" class="geo-button">Show Geo History</button>
+                        <div id="history">
+                            
+                        </div>
+                       </div>
+                   </div> 
+                </div>
+    	   </div>
+        </div>
+
+    	<div class="container footer">
+    		<div class="text-center container col-lg-12 col-md-12 col-sm-12 col-xs-12 social">
+    			<ul >
+    				<li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+    				<li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+    				<li><a href="#"><img src="images/linkedIn.png" alt=""></a></li>
+    				<li><a href="#"><img src="images/play.png" alt=""></a></li>
+    				<li><a href="#"><img src="images/icon.png" alt=""></a></li>
+    				<li><a href="#"><img src="images/wifi.png" alt=""></a></li>
+    			</ul>
+    		</div>
+    	</div>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPqmo2TC5Qrfk_Fuy_hoquW9Wh6YN69A0&callback=initMap">
+        </script>
+    </body>
+</html>
